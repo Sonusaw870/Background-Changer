@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<title>Background Changer</title>
+
+<style>
+
+body{
+    margin: 0px;
+    padding: 20px 100px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.btn{
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    border: solid gray 2px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+#white{
+background-color: white;
+}
+
+#aqua{
+background-color: aqua;
+}
+
+#violet{
+background-color: violet;
+}
+
+#black{
+    background-color: black;
+}
+
+#color-switcher{
+    text-align: right;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div id="color-switcher">
+
+    <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+
+    <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+
+    <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+
+    <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+
+
+
+
+    </div>
+
+<h1 class="text">About Us</h1>
+<!-- <img src="S:\PROJECTS\Background Changer\pic.jpg"> -->
+
+
+<p class="text">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem neque iure quasi! Iste soluta perspiciatis eius officia reprehenderit nihil, fugiat molestias aspernatur maxime velit veniam totam enim consectetur ipsum. Minus a magnam dolore porro dolores repudiandae, assumenda numquam dolorem quibusdam placeat deserunt iure atque consequuntur commodi veritatis modi cumque praesentium dolorum excepturi eveniet? Alias veniam labore, eius quod sequi est molestiae unde repellendus a temporibus perferendis sit, reprehenderit repudiandae, at error blanditiis commodi amet. Ipsam facere magnam autem consequatur! Blanditiis culpa placeat quam ullam molestias nesciunt expedita quae sit, consequatur nemo tempore reprehenderit quia repellat illo pariatur aliquam error itaque? Tempora asperiores, odit, non quasi maxime suscipit veritatis natus id minus dolorum aliquid doloribus aperiam fugit sunt, accusantium nam harum aspernatur explicabo cupiditate labore rem quis at? Similique delectus neque nulla nobis ducimus quas ratione exercitationem, veniam quos suscipit? Culpa nobis recusandae voluptatem modi voluptatibus pariatur velit esse est! Dolorem dicta soluta obcaecati repellat alias explicabo iure. Excepturi illum harum quod pariatur magnam accusamus reprehenderit impedit consectetur laboriosam accusantium voluptate tempora exercitationem, et modi, rem molestias. Id incidunt reprehenderit veniam vel enim pariatur, beatae qui saepe vero! Sed culpa cum voluptate quasi voluptates, repudiandae voluptatem praesentium. Sapiente laborum repudiandae dolores adipisci fuga. Labore reiciendis, corporis totam veritatis, ad atque delectus voluptate facilis assumenda tempora, eligendi sapiente ea quisquam? Consequatur, deserunt? Expedita cupiditate molestiae nisi deleniti sapiente ullam rerum earum doloremque maxime aliquam, quam, id tenetur eveniet necessitatibus at ut. Vel provident corporis ducimus optio sequi nobis itaque tenetur quidem eaque? Asperiores necessitatibus accusantium ab dignissimos debitis deleniti officiis, quasi non atque nobis quisquam earum laudantium eos libero quidem at cum rerum modi laborum iste, rem soluta. Error at expedita deserunt adipisci beatae accusantium non, sed laborum possimus sunt sit porro. Facilis non quia quo dolorem perspiciatis molestias hic quam, fugiat esse ab optio cupiditate enim sed minima quibusdam, odit architecto. Atque quas fuga porro perspiciatis animi voluptates vitae ipsum sit, quia sapiente blanditiis ad eveniet qui itaque. Fugiat officiis laudantium magni, nobis itaque aut eveniet, illum architecto ipsam similique laborum, nemo excepturi illo molestiae maxime aliquam consequatur quas optio dolorum obcaecati explicabo quam. Architecto numquam nisi cum quam quia accusantium quae ex exercitationem quas placeat eaque, necessitatibus soluta ad inventore aut deserunt. Nam, impedit aspernatur dignissimos aperiam repellendus consequatur eveniet quos nostrum ab aut quidem nemo accusantium maxime eum vitae cum tenetur voluptatum repudiandae ipsa aliquam earum praesentium corrupti recusandae sed. Harum, officia nihil numquam at quia quasi a repellat laudantium pariatur neque sit, qui iusto nemo eum? Ad sunt iure saepe omnis totam hic quos corrupti a iste sed cum temporibus modi enim doloribus blanditiis porro aliquid eligendi voluptates, perspiciatis nam veniam nemo repellendus repellat autem? Magnam modi fuga recusandae expedita sunt aperiam, saepe in aliquid voluptatem impedit, autem debitis dolor vero incidunt libero dolores eos odio quos beatae nihil? Repellat, minima accusantium. Laudantium placeat quo optio eius repellendus facilis quaerat cumque hic veritatis rerum tenetur veniam consequuntur, vero et dignissimos porro ex velit assumenda at autem qui. A.
+
+</p>
+
+
+
+<script>
+
+function changeBG(color){
+    document.body.style.backgroundColor=color;
+    let txt=document.getElementsByClassName("text");
+    if(color=="#000000"){
+        for(let elm of txt){
+            elm.style.color="white";
+        }
+    }else{
+        for(let elm of txt){
+            elm.style.color="black";
+        }
+    }
+        
+
+    
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
